@@ -22,4 +22,11 @@ var Router = Backbone.Router.extend({
     this.container.childView = this.view1;
     this.container.render();
   },
+  handleRoute2: function() {
+    if (this.view2 == null) {
+      this.view2 = new View2({model: this.greeting});
+    }
+    this.container.childView = this.view2;
+    this.container.render();
+  },
 });
