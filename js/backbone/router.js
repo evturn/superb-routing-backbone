@@ -36,4 +36,16 @@ var Router = Backbone.Router.extend({
     this.container.childView = this.view3;
     this.container.render();
   },
+  handleRouteAll: function(viewid, msg) {
+    if (viewid == 1) {
+      this.handleRoute1();
+    }
+    else if (viewid == 2) {
+      this.handleRoute2();
+    }
+    else if (viewid == 3) {
+      this.handleRoute3();
+    }
+
+  },
 });
