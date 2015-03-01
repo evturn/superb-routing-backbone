@@ -4,7 +4,7 @@ var View1 = Backbone.View.extend({
 		this.render();
 	},
 	render: function() {
-		this.$el.html(this.model.get('Message') + ' Sup, I\'m your first view.');
+		this.$el.html(this.model.get('Message') + ' I\'m your first view.');
 		return this;
 	},
 });
@@ -32,7 +32,7 @@ var View3 = Backbone.View.extend({
 var ContainerView = Backbone.View.extend({
 	childView: null,
 	render: function() {
-		this.$el.html('View Zone</p>');
+		this.$el.html('<h2>View Zone</h2>');
 
 		this.$el.append(this.childView.$el);
 		return this;

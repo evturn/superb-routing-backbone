@@ -5,7 +5,7 @@ var Router = Backbone.Router.extend({
   view2: null,
   view3: null,
   initialize: function() {
-    this.greeting = new GreetModel({ Message: 'I\'m a Model'});
+    this.greeting = new GreetModel({ Message: 'Sup, '});
     this.container = new ContainerView({el: $('#rAppContainer'), model: this.greeting});
   },
   routes: {
