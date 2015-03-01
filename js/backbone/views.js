@@ -14,7 +14,7 @@ var View2 = Backbone.View.extend({
 		this.render();
 	},
 	render: function() {
-		this.$el.html(this.model.get('Message') + ' I\'m your second');
+		this.$el.html(this.model.get('Message') + ' I\'m #2.');
 		return this;
 	},
 });
@@ -24,7 +24,7 @@ var View3 = Backbone.View.extend({
 		this.render();
 	},
 	render: function() {
-		this.$el.html(this.model.get('Message') + ' I AM VIEW THREE');
+		this.$el.html(this.model.get('Message') + ' I\m view three.');
 		return this;
 	},
 });
