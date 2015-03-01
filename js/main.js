@@ -1,0 +1,1 @@
+var greeting = new GreetModel({Message: "Your View"});
