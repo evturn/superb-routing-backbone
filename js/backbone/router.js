@@ -6,7 +6,7 @@ var Router = Backbone.Router.extend({
   view3: null,
   initialize: function() {
     this.greeting = new GreetModel({ Message: 'Hello, '});
-    this.container = new ContainerView({el: $('#rAppContainer'), model: this.greeting});
+    this.container = new ContainerView({el: $('#wrapper'), model: this.greeting});
   },
   routes: {
     ''      : 'handleRoute1',
@@ -46,6 +46,8 @@ var Router = Backbone.Router.extend({
     else if (viewid == 3) {
       this.handleRoute3();
     }
-
+    if (msg) {
+      alert(msg);
+    }
   },
 });
