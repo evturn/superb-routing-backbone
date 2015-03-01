@@ -13,3 +13,11 @@ function showView1() {
 	container.childView = view1;
 	container.render();
 }
+
+function showVie2() {
+	if (view2 == null) {
+		view2 = new View1({model: greeting});
+	}
+	container.childView = view2;
+	container.render();
+}
