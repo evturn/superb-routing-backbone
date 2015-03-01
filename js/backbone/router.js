@@ -8,4 +8,11 @@ var Router = Backbone.Router.extend({
     this.greeting = new GreetModel({ Message: 'I\'m a Model'});
     this.container = new ContainerView({el: $('#rAppContainer'), model: this.greeting});
   },
+  routes: {
+    ''      : 'handleRoute1',
+    'view1' : 'handleRoute1',
+    'view2' : 'handleRoute2',
+    'view3' : 'handleRoute3',
+    'view/view/:viewid(/:msg)' : 'handleRouteAll',
+  },
 });
