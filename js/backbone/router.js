@@ -15,4 +15,11 @@ var Router = Backbone.Router.extend({
     'view3' : 'handleRoute3',
     'view/view/:viewid(/:msg)' : 'handleRouteAll',
   },
+  handleRoute1: function() {
+    if (this.view1 == null) {
+      this.view1 = new View1({model: this.greeting});
+    }
+    this.container.childView = this.view1;
+    this.container.render();
+  },
 });
