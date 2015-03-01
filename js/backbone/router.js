@@ -29,4 +29,11 @@ var Router = Backbone.Router.extend({
     this.container.childView = this.view2;
     this.container.render();
   },
+  handleRoute3: function() {
+    if (this.view3 == null) {
+      this.view3 = new View3({model: this.greeting});
+    }
+    this.container.childView = this.view3;
+    this.container.render();
+  },
 });
