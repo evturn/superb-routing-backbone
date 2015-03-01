@@ -30,10 +30,9 @@ var View3 = Backbone.View.extend({
 });
 
 var ContainerView = Backbone.View.extend({
-	template: _.template($('#container-template').html()),
 	childView: null,
 	render: function() {
-		this.$el.html('View Zone');
+		this.$el.html('View Zone</p>');
 
 		this.$el.append(this.childView.$el);
 		return this;
